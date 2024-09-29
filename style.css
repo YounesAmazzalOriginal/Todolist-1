@@ -1,0 +1,142 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Nunito-Medium;
+  border-radius: 2px;
+}
+@font-face {
+  font-family: Nunito-Medium;
+  src: url(Nunito-Medium.otf);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Nunito-Medium;
+  background-color: #0a000f;
+  scale: 1.2;
+
+  height: 80vh;
+  margin-top: 50px;
+}
+
+:root {
+  --gray: #f2f2f2;
+  --purple: #9c07f2;
+  --Bg: #12011b;
+}
+button,
+input {
+  appearance: none;
+  outline: none;
+  border: 0;
+  background-color: transparent;
+}
+button {
+  cursor: pointer;
+}
+::placeholder {
+  font-weight: 100;
+}
+::-webkit-scrollbar {
+  background-color: var(--Bg);
+  width: 5px;
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue-3);
+  border-radius: 100px;
+}
+
+.taskContainer {
+  background-color: var(--Bg);
+  overflow-y: scroll;
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  height: 400px;
+}
+.inputArea {
+  background-color: white;
+  border-radius: 1000px;
+  padding: 3px 4px;
+  display: flex;
+  height: 35px;
+}
+.inputArea input {
+  width: 80%;
+  padding-inline: 11px;
+}
+.inputArea button {
+  width: 20%;
+  background-color: var(--purple);
+  color: white;
+  border-radius: 1000px;
+}
+
+.taskAreaContainer {
+  display: grid;
+  gap: 2px;
+}
+.TasksParent {
+  margin-top: 10px;
+}
+.taskArea {
+  background-color: white;
+  overflow: hidden;
+  border-radius: 100px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.taskArea .taskReceptor {
+  padding-left: 15px;
+  padding-right: 10px;
+  width: 85%;
+  font-size: 0.8rem;
+}
+.taskArea button {
+  background-color: var(--purple);
+  border-radius: 100%;
+  color: white;
+  min-width: 30px;
+  max-width: 30px;
+  min-height: 30px;
+  max-height: 30px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-right: 3px;
+  transition: all 0.4s;
+}
+.taskArea button:hover {
+  background-color: white;
+  color: var(--purple);
+}
+
+.taskArea span {
+  font-size: 0.7rem;
+  margin-right: 5px;
+}
+
+.theChangecontainer input[type="checkbox"] {
+  background-color: white;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  margin-top: 30px;
+}
+.theChangecontainer input[type="checkbox"]:checked {
+  scale: 1.2;
+}
+
+::selection,
+*,
+body,
+html {
+  user-select: none;
+}
